@@ -12,4 +12,4 @@ console.log("333" === 333);
 console.log((600 + 510) / 2);
 // Wrong result: Expected a Number 4 received 22
 console.log(2 + 2);
-console.log(25 / 5 === 5) && 50 / 10 === 5;
+console.log(25 / 5 === 5 && 50 / 10 === 5);
