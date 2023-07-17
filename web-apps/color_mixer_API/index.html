@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .slider-label {
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        #color-mixer {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            transition: background-color 0.3s;
+        }
+
+        #color-value {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <label class="slider-label" for="redSlider">Red:</label>
+        <input type="range" id="redSlider" step="1" min="0" max="255" value="255">
+        <br>
+        <label class="slider-label" for="greenSlider">Green:</label>
+        <input type="range" id="greenSlider" step="1" min="0" max="255" value="255">
+        <br>
+        <label class="slider-label" for="blueSlider">Blue:</label>
+        <input type="range" id="blueSlider" step="1" min="0" max="255" value="255">
+    </header>
+
+    <div id="color-mixer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

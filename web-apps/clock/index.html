@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #digital-clock {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #analog-clock {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+
+        .hand {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+            transition: transform 0.5s;
+        }
+
+        .second-hand {
+            width: 2px;
+            height: 80px;
+            background-color: #f00;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .minute-hand {
+            width: 4px;
+            height: 70px;
+            background-color: #000;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .hour-hand {
+            width: 6px;
+            height: 50px;
+            background-color: #000;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .center-dot {
+            position: absolute;
+            left: calc(50% - 5px);
+            top: calc(50% - 5px);
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digital Clock</h1>
+    <div id="digital-clock"></div>
+
+    <h1>Analog Clock</h1>
+    <div id="analog-clock">
+        <div class="hand second-hand"></div>
+        <div class="hand minute-hand"></div>
+        <div class="hand hour-hand"></div>
+        <div class="center-dot"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

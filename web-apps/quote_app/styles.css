@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+#quote-container {
+  margin: 30px 0;
+}
+
+#quote {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#author {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#new-quote-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
